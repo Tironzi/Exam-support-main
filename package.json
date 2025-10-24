@@ -1,0 +1,17 @@
+{
+  "name": "web-iot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Tironzi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "mqtt": "^5.14.1",
+    "socket.io": "^4.8.1"
+  }
+}

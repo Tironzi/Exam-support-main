@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>HỆ THỐNG HỖ TRỢ CANH THI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main class="main">
+      <header class="header">
+        <h1>HỆ THỐNG HỖ TRỢ CANH THI</h1>
+        <button class="logout">ĐĂNG XUẤT</button>
+      </header>
+
+      <section class="grid" id="classroomGrid">
+        <!-- Cards injected by JS -->
+      </section>
+    </main>
+
+    <!-- ✅ Modal sửa lại -->
+    <div class="modal hidden" id="supportModal" aria-hidden="true" role="dialog" aria-modal="true">
+      <div class="modal-content" role="document">
+        <h2>Xác nhận hỗ trợ</h2>
+        <p id="modalRequest"></p>
+        <!-- Thêm hai nút -->
+        <div class="modal-actions">
+          <button class="btn confirm" id="confirmBtn">✅ Hoàn thành</button>
+          <button class="btn close" id="closeModal">❌ Đóng</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
